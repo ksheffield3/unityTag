@@ -21,6 +21,10 @@
 		CDC7EA621824363800B5655E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA441824363800B5655E /* UIKit.framework */; };
 		CDC7EA6A1824363800B5655E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDC7EA681824363800B5655E /* InfoPlist.strings */; };
 		CDC7EA6C1824363800B5655E /* unityTagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA6B1824363800B5655E /* unityTagTests.m */; };
+		CDC7EA771824375700B5655E /* sensorTag.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA761824375700B5655E /* sensorTag.m */; };
+		CDC7EA7A182437AE00B5655E /* sensorData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA79182437AE00B5655E /* sensorData.m */; };
+		CDC7EA7D18243AFA00B5655E /* findSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA7C18243AFA00B5655E /* findSensor.m */; };
+		CDC7EA8018243B4300B5655E /* sensorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA7F18243B4300B5655E /* sensorUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		CDC7EA671824363800B5655E /* unityTagTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "unityTagTests-Info.plist"; sourceTree = "<group>"; };
 		CDC7EA691824363800B5655E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CDC7EA6B1824363800B5655E /* unityTagTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unityTagTests.m; sourceTree = "<group>"; };
+		CDC7EA751824375700B5655E /* sensorTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sensorTag.h; sourceTree = "<group>"; };
+		CDC7EA761824375700B5655E /* sensorTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sensorTag.m; sourceTree = "<group>"; };
+		CDC7EA78182437AE00B5655E /* sensorData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sensorData.h; sourceTree = "<group>"; };
+		CDC7EA79182437AE00B5655E /* sensorData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sensorData.m; sourceTree = "<group>"; };
+		CDC7EA7B18243AFA00B5655E /* findSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findSensor.h; sourceTree = "<group>"; };
+		CDC7EA7C18243AFA00B5655E /* findSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = findSensor.m; sourceTree = "<group>"; };
+		CDC7EA7E18243B4300B5655E /* sensorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sensorUtil.h; sourceTree = "<group>"; };
+		CDC7EA7F18243B4300B5655E /* sensorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sensorUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,14 @@
 				CDC7EA4F1824363800B5655E /* AppDelegate.h */,
 				CDC7EA501824363800B5655E /* AppDelegate.m */,
 				CDC7EA521824363800B5655E /* Main.storyboard */,
+				CDC7EA78182437AE00B5655E /* sensorData.h */,
+				CDC7EA79182437AE00B5655E /* sensorData.m */,
+				CDC7EA7B18243AFA00B5655E /* findSensor.h */,
+				CDC7EA7C18243AFA00B5655E /* findSensor.m */,
+				CDC7EA7E18243B4300B5655E /* sensorUtil.h */,
+				CDC7EA7F18243B4300B5655E /* sensorUtil.m */,
+				CDC7EA751824375700B5655E /* sensorTag.h */,
+				CDC7EA761824375700B5655E /* sensorTag.m */,
 				CDC7EA551824363800B5655E /* ViewController.h */,
 				CDC7EA561824363800B5655E /* ViewController.m */,
 				CDC7EA581824363800B5655E /* Images.xcassets */,
@@ -249,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC7EA771824375700B5655E /* sensorTag.m in Sources */,
 				CDC7EA571824363800B5655E /* ViewController.m in Sources */,
+				CDC7EA7A182437AE00B5655E /* sensorData.m in Sources */,
+				CDC7EA8018243B4300B5655E /* sensorUtil.m in Sources */,
 				CDC7EA511824363800B5655E /* AppDelegate.m in Sources */,
+				CDC7EA7D18243AFA00B5655E /* findSensor.m in Sources */,
 				CDC7EA4D1824363800B5655E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
