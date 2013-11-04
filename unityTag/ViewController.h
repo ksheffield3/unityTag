@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreBluetooth/CoreBluetooth.h>
+#import "findSensor.h"
 
 @interface ViewController : UIViewController
+@property (nonatomic, copy) findSensor *sensor;
 
 @end
