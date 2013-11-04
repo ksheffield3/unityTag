@@ -48,7 +48,9 @@
 {
     NSLog(@"openConnection");
   //  NSArray *services = @[ [CBUUID UUIDWithString:@"FFE1"]];
-    [self.centralManager scanForPeripheralsWithServices:nil options:nil];
+    NSArray *services = @[[CBUUID UUIDWithString:@"180a"]];
+   // [central scanForPeripheralsWithServices:services options:nil];
+    [self.centralManager scanForPeripheralsWithServices:services options:nil];
 }
 
 -(void)centralManagerDidUpdateState:(CBCentralManager *) central {
@@ -72,17 +74,17 @@
 -(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
     
    // NSLog([NSString stringWithFormat:@"%@",peripheral.name]);
-    if (peripheral.name == NULL) { return; }
-    if (peripheral.identifier == NULL) { return; }
+    if (peripheral.name == NULL) { NSLog(@"no name"); return; }
+    if (peripheral.identifier == NULL) { NSLog(@"no identifier"); return; }
   // isEqualToString:@"KelleyTag (TI BLE Sensor Tag)"
-    CBUUID *tagID = [CBUUID UUIDWithString:@"180a"];
-    if ([peripheral.identifier isEqual:tagID]) {
+    
+    //if ([peripheral.identifier isEqual:tagID]) {
         NSLog(@"SensorTag Found!");
         self.found = TRUE;
         [self.centralManager stopScan];
         self.periph = peripheral;
         [self.centralManager connectPeripheral:peripheral options:nil];
-    }
+   // }
 }
 
 - (void)centralManager:(CBCentralManager *)central

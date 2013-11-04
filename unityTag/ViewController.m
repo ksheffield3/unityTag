@@ -12,6 +12,7 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 
 
+
 @interface ViewController () <CBCentralManagerDelegate, CBPeripheralDelegate>
 @property findSensor *sens;
 @property (nonatomic) BOOL found;
@@ -23,14 +24,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   // findSensor *sens = [[findSensor alloc]init];
-    
-    //sens.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
-
-    
-   // NSLog(@"Started searching");
-  //  [sens startSearching];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -38,21 +31,19 @@
     [super viewWillAppear:animated];
     self.sens = [[findSensor alloc]init];
     self.sens.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
-    //paste your viewDidLoad codes
     [self.sens startSearching];
-    // [self.sensor startSearching];
-    NSLog(@"Back home");
+    
 }
 
-- (void)openConnection
+- (void)startScanning
 {
     NSLog(@"openConnection");
-    //  NSArray *services = @[ [CBUUID UUIDWithString:@"FFE1"]];
+   
     [self.sens.centralManager scanForPeripheralsWithServices:nil options:nil];
 }
 
 -(void)centralManagerDidUpdateState:(CBCentralManager *) central {
-    if (central.state < CBCentralManagerStatePoweredOn) {
+    if (central.state != CBCentralManagerStatePoweredOn) {
         NSLog(@"Not on!");
     }
     if(central.state == CBCentralManagerStateUnknown)
@@ -65,22 +56,25 @@
     }
     
     NSLog(@"about to scan");
-    [self openConnection];
+    [self startScanning];
     
 }
 
 -(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
     
-    // NSLog([NSString stringWithFormat:@"%@",peripheral.name]);
-    if (peripheral.name == NULL) { return; }
-    if (peripheral.identifier == NULL) { return; }
+    if (peripheral.name == NULL) {NSLog(@"No name found"); return; }
+    if (peripheral.identifier == NULL) { NSLog(@"No identifier found"); return; }
+    NSUUID *tagUUID = [[NSUUID alloc] initWithUUIDString:@"D03124B2-DC31-AA94-3276-B5422868E2F7"]; //UUID specific to my sensor tag
+   
+        NSLog(@"Identifier %@", peripheral.identifier);
     
-    if ([peripheral.name isEqualToString:@"KelleyTag (TI BLE Sensor Tag)"] && !self.found) {
-        NSLog(@"SensorTag Found!");
-        self.found = TRUE;
-        [self.sens.centralManager stopScan];
-        self.sens.periph = peripheral;
-        [self.sens.centralManager connectPeripheral:peripheral options:nil];
+    if([peripheral.identifier isEqual:tagUUID]  && !self.found) {
+        
+             NSLog(@"SensorTag Found!");
+             self.found = TRUE;
+             [self.sens.centralManager stopScan];
+             self.sens.periph = peripheral;
+             [self.sens.centralManager connectPeripheral:peripheral options:nil];
     }
     else{
         NSLog(@"Cannot find tag");
@@ -102,12 +96,11 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
 }
 
 -(void) peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error {
-    for (CBService *service in peripheral.services) {
-        // NSString *UUIDString = CFBridgingRelease(CFUUIDCreateString(NULL, CFBridgingRetain(service.UUID)));
-        
-        //  NSLog([NSString stringWithFormat:@"%@: %@", UUIDString, service.debugDescription]);
+    for (CBService *service in peripheral.services)
+    {
         [peripheral discoverCharacteristics:nil forService:service];
-    }}
+    }
+}
 
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error
 {
