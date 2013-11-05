@@ -7,10 +7,7 @@
 //
 
 #import "ViewController.h"
-//#import "findSensor.h"
-//#import "sensorTag.h"
 #import <CoreBluetooth/CoreBluetooth.h>
-//#import "BLEUtility.h"
 #import "GyroData.h"
 
 
@@ -32,17 +29,19 @@
 
 }
 
--(bool)sensorEnabled:(NSString *)Sensor {
+-(bool)sensorEnabled:(NSString *)Sensor
+{
     NSString *val = [self.d.setupData valueForKey:Sensor];
     
-    if (val) {
+    if (val)
+    {
         if ([val isEqualToString:@"1"]) return TRUE;
-    
     }
     return FALSE;
 }
 
--(int)sensorPeriod:(NSString *)Sensor {
+-(int)sensorPeriod:(NSString *)Sensor
+{
     NSString *val = [self.d.setupData valueForKey:Sensor];
     return [val integerValue];
 }
@@ -50,6 +49,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
     self.sensorsEnabled = [[NSMutableArray alloc] init];
 
     self.d.central = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
@@ -57,7 +57,9 @@
     self.currentVal = [[sensorTagValues alloc]init];
     
     self.vals = [[NSMutableArray alloc]init];
+    
     self.d.setupData = [self makeSensorTagConfiguration];
+    
     self.logInterval = 1.0; //1000 ms
     
     self.logTimer = [NSTimer scheduledTimerWithTimeInterval:self.logInterval target:self selector:@selector(logValues:) userInfo:nil repeats:YES];
@@ -73,8 +75,10 @@
     [self.d.central scanForPeripheralsWithServices:nil options:nil];
 }
 
--(void)centralManagerDidUpdateState:(CBCentralManager *) central {
-    if (central.state != CBCentralManagerStatePoweredOn) {
+-(void)centralManagerDidUpdateState:(CBCentralManager *) central
+{
+    if (central.state != CBCentralManagerStatePoweredOn)
+    {
         NSLog(@"Not on!");
     }
     if(central.state == CBCentralManagerStateUnknown)
@@ -89,32 +93,26 @@
         NSLog(@"about to scan");
         [self startScanning];
     }
-    
-   
-    
 }
 
--(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
+-(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
+{
     
     if (peripheral.name == NULL) {NSLog(@"No name found"); return; }
     if (peripheral.identifier == NULL) { NSLog(@"No identifier found"); return; }
     NSUUID *tagUUID = [[NSUUID alloc] initWithUUIDString:@"D03124B2-DC31-AA94-3276-B5422868E2F7"]; //UUID specific to my sensor tag
    
-      //  NSLog(@"Identifier %@", peripheral.identifier);
-    
-    if([peripheral.identifier isEqual:tagUUID]  && !self.found) {
+    if([peripheral.identifier isEqual:tagUUID]  && !self.found)
+    {
         
-             NSLog(@"SensorTag Found!");
-             self.found = TRUE;
-             [self.d.central stopScan];
-             self.d.p = peripheral;
-            // self.connectingPeripheral = peripheral;
-             [self.d.central connectPeripheral:peripheral options:Nil];
-        
-        
-           //  [self configureSensorTag];
+        NSLog(@"SensorTag Found!");
+        self.found = TRUE;
+        [self.d.central stopScan];
+        self.d.p = peripheral;
+        [self.d.central connectPeripheral:peripheral options:Nil];
     }
-    else{
+    else
+    {
         NSLog(@"Cannot find tag");
     }
 }
@@ -128,31 +126,24 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
 }
 
 
--(void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
+-(void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral
+{
     [peripheral setDelegate:self];
     [peripheral discoverServices:nil];
 }
 
--(void) peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error {
-    
-    NSLog(@"Peripheral services = %@", peripheral.services);
-    
+-(void) peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error
+{
     for (CBService *service in peripheral.services)
     {
         [peripheral discoverCharacteristics:nil forService:service];
-      //  [self configureSensorTag];
+      
     }
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error
 {
-    
-   // NSLog([NSString stringWithFormat:@"Service Characs:%@ UUID: %@ debug info:%@", service.characteristics, service.UUID, service.debugDescription]);
-    
     [self configureSensorTag];
-    
-    
-    
 }
 
 -(void) peripheral:(CBPeripheral *)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
@@ -169,7 +160,6 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
         CBUUID *sUUID = [CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Accelerometer service UUID"]];
        // NSUUID *sUUID= [[NSUUID alloc] initWithUUIDString:[self.d.setupData valueForKey:@"Accelerometer service UUID"]];
         CBUUID *cUUID = [CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Accelerometer config UUID"]];
-       
         CBUUID *pUUID = [CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Accelerometer period UUID"]];
         NSInteger period = [[self.d.setupData valueForKey:@"Accelerometer period"] integerValue];
         uint8_t periodData = (uint8_t)(period / 10);
@@ -230,7 +220,6 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
      //   NSLog(@"X: % 0.1fG",x);
      //   NSLog(@"Y: % 0.1fG",y);
      //   NSLog([NSString stringWithFormat:@"Z: % 0.1fG",z]);
-    
         
         self.currentVal.accX = x;
         self.currentVal.accY = y;
@@ -238,12 +227,7 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
     
     }
     
-    if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Gyroscope data UUID"]]]) {
-        
-        
-        
-        
-        float x = [self.gData calcXValue:characteristic.value];
+    if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Gyroscope data UUID"]]]) {        float x = [self.gData calcXValue:characteristic.value];
         float y = [self.gData calcYValue:characteristic.value];
         float z = [self.gData calcZValue:characteristic.value];
         
@@ -258,17 +242,12 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
         //self.gyro.accValueX.textColor = [UIColor blackColor];
         //self.gyro.accValueY.textColor = [UIColor blackColor];
         //self.gyro.accValueZ.textColor = [UIColor blackColor];
-        
-        
         self.currentVal.gyroX = x;
-        
         self.currentVal.gyroY = y;
         self.currentVal.gyroZ = z;
         
     }
 }
-
-
 
 -(NSMutableDictionary *) makeSensorTagConfiguration {
     NSMutableDictionary *servList = [[NSMutableDictionary alloc] init];
@@ -315,15 +294,8 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
     [servList setValue:@"F000AA51-0451-4000-B000-000000000000" forKey:@"Gyroscope data UUID"];
     [servList setValue:@"F000AA52-0451-4000-B000-000000000000" forKey:@"Gyroscope config UUID"];
     
-    
-  //  NSLog(@"%@",servList);
-   // [self.d.setupData addEntriesFromDictionary:servList];
-  //  NSLog(@"values to setupData = %@", self.d.setupData);
     return servList;
 }
-
-
-
 
 
 - (void)didReceiveMemoryWarning
