@@ -8,9 +8,23 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreBluetooth/CoreBluetooth.h>
-#import "findSensor.h"
+//#import "findSensor.h"
+#import "AccelData.h"
+#import "sensorTag.h"
+#import "BLEUtility.h"
 
 @interface ViewController : UIViewController
-@property (nonatomic, copy) findSensor *sensor;
+//@property (nonatomic, copy) findSensor *sensor;
+
+@property(strong) CBPeripheral *connectingPeripheral;
+
+@property (strong,nonatomic) sensorTag *d;
+@property NSMutableArray *sensorsEnabled;
+
+@property (strong,nonatomic) sensorTagValues *currentVal;
+@property (strong,nonatomic) NSMutableArray *vals;
+@property (strong,nonatomic) NSTimer *logTimer;
+
+@property float logInterval;
 
 @end

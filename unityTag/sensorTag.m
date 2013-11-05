@@ -13,6 +13,6 @@
 
 @implementation sensorTag
 
-@synthesize peripheral, central, initialData;
+@synthesize p, central, setupData;
 
 @end

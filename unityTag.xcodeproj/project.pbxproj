@@ -25,6 +25,9 @@
 		CDC7EA7A182437AE00B5655E /* sensorData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA79182437AE00B5655E /* sensorData.m */; };
 		CDC7EA7D18243AFA00B5655E /* findSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA7C18243AFA00B5655E /* findSensor.m */; };
 		CDC7EA8018243B4300B5655E /* sensorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA7F18243B4300B5655E /* sensorUtil.m */; };
+		CDC7EA82182816FC00B5655E /* output_services.txt in Resources */ = {isa = PBXBuildFile; fileRef = CDC7EA81182816FC00B5655E /* output_services.txt */; };
+		CDC7EA8518282DB100B5655E /* AccelData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA8418282DB100B5655E /* AccelData.m */; };
+		CDC7EA881828345B00B5655E /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA871828345B00B5655E /* BLEUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,11 @@
 		CDC7EA7C18243AFA00B5655E /* findSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = findSensor.m; sourceTree = "<group>"; };
 		CDC7EA7E18243B4300B5655E /* sensorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sensorUtil.h; sourceTree = "<group>"; };
 		CDC7EA7F18243B4300B5655E /* sensorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sensorUtil.m; sourceTree = "<group>"; };
+		CDC7EA81182816FC00B5655E /* output_services.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output_services.txt; sourceTree = "<group>"; };
+		CDC7EA8318282DB100B5655E /* AccelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelData.h; sourceTree = "<group>"; };
+		CDC7EA8418282DB100B5655E /* AccelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelData.m; sourceTree = "<group>"; };
+		CDC7EA861828345B00B5655E /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
+		CDC7EA871828345B00B5655E /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +145,11 @@
 				CDC7EA761824375700B5655E /* sensorTag.m */,
 				CDC7EA551824363800B5655E /* ViewController.h */,
 				CDC7EA561824363800B5655E /* ViewController.m */,
+				CDC7EA861828345B00B5655E /* BLEUtility.h */,
+				CDC7EA871828345B00B5655E /* BLEUtility.m */,
+				CDC7EA8318282DB100B5655E /* AccelData.h */,
+				CDC7EA8418282DB100B5655E /* AccelData.m */,
+				CDC7EA81182816FC00B5655E /* output_services.txt */,
 				CDC7EA581824363800B5655E /* Images.xcassets */,
 				CDC7EA471824363800B5655E /* Supporting Files */,
 			);
@@ -249,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC7EA591824363800B5655E /* Images.xcassets in Resources */,
+				CDC7EA82182816FC00B5655E /* output_services.txt in Resources */,
 				CDC7EA4B1824363800B5655E /* InfoPlist.strings in Resources */,
 				CDC7EA541824363800B5655E /* Main.storyboard in Resources */,
 			);
@@ -269,11 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC7EA8518282DB100B5655E /* AccelData.m in Sources */,
 				CDC7EA771824375700B5655E /* sensorTag.m in Sources */,
 				CDC7EA571824363800B5655E /* ViewController.m in Sources */,
 				CDC7EA7A182437AE00B5655E /* sensorData.m in Sources */,
 				CDC7EA8018243B4300B5655E /* sensorUtil.m in Sources */,
 				CDC7EA511824363800B5655E /* AppDelegate.m in Sources */,
+				CDC7EA881828345B00B5655E /* BLEUtility.m in Sources */,
 				CDC7EA7D18243AFA00B5655E /* findSensor.m in Sources */,
 				CDC7EA4D1824363800B5655E /* main.m in Sources */,
 			);

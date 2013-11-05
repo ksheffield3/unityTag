@@ -1,0 +1,465 @@
+2013-11-05 13:19:39.492 unityTag[1967:60b] Init central
+2013-11-05 13:19:39.510 unityTag[1967:60b] about to scan
+2013-11-05 13:19:39.511 unityTag[1967:60b] openConnection
+2013-11-05 13:19:39.560 unityTag[1967:60b] SensorTag Found!
+2013-11-05 13:19:40.710 unityTag[1967:60b] Peripheral services = (
+    "<CBService: 0x15678110>",
+    "<CBService: 0x15678d20>",
+    "<CBService: 0x15678d40>",
+    "<CBService: 0x15678d70>",
+    "<CBService: 0x15640920>",
+    "<CBService: 0x15640960>",
+    "<CBService: 0x15640980>",
+    "<CBService: 0x15640900>",
+    "<CBService: 0x15678f40>",
+    "<CBService: 0x15640940>"
+)
+2013-11-05 13:19:40.712 unityTag[1967:60b] Service description found: <CBService: 0x15678110> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.714 unityTag[1967:60b] Service UUID to String: 180a
+2013-11-05 13:19:40.716 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.717 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.719 unityTag[1967:60b] Service description found: <CBService: 0x15678d20> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.721 unityTag[1967:60b] Service UUID to String: f000aa00-0451-4000-b000-000000000000
+2013-11-05 13:19:40.722 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.724 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.725 unityTag[1967:60b] Service description found: <CBService: 0x15678d40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.727 unityTag[1967:60b] Service UUID to String: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.729 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.731 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.732 unityTag[1967:60b] Service description found: <CBService: 0x15678d70> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.734 unityTag[1967:60b] Service UUID to String: f000aa20-0451-4000-b000-000000000000
+2013-11-05 13:19:40.737 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.738 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.740 unityTag[1967:60b] Service description found: <CBService: 0x15640920> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.742 unityTag[1967:60b] Service UUID to String: f000aa30-0451-4000-b000-000000000000
+2013-11-05 13:19:40.743 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.745 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.747 unityTag[1967:60b] Service description found: <CBService: 0x15640960> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.749 unityTag[1967:60b] Service UUID to String: f000aa40-0451-4000-b000-000000000000
+2013-11-05 13:19:40.751 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.753 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.755 unityTag[1967:60b] Service description found: <CBService: 0x15640980> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.757 unityTag[1967:60b] Service UUID to String: f000aa50-0451-4000-b000-000000000000
+2013-11-05 13:19:40.759 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.761 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.763 unityTag[1967:60b] Service description found: <CBService: 0x15640900> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.764 unityTag[1967:60b] Service UUID to String: ffe0
+2013-11-05 13:19:40.766 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.768 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.770 unityTag[1967:60b] Service description found: <CBService: 0x15678f40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.772 unityTag[1967:60b] Service UUID to String: f000aa60-0451-4000-b000-000000000000
+2013-11-05 13:19:40.774 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.776 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.778 unityTag[1967:60b] Service description found: <CBService: 0x15640940> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.780 unityTag[1967:60b] Service UUID to String: f000ffc0-0451-4000-b000-000000000000
+2013-11-05 13:19:40.782 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.783 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.786 unityTag[1967:60b] Service description found: <CBService: 0x15678110> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.788 unityTag[1967:60b] Service UUID to String: 180a
+2013-11-05 13:19:40.790 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.792 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.794 unityTag[1967:60b] Service description found: <CBService: 0x15678d20> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.796 unityTag[1967:60b] Service UUID to String: f000aa00-0451-4000-b000-000000000000
+2013-11-05 13:19:40.797 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.799 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.801 unityTag[1967:60b] Service description found: <CBService: 0x15678d40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.803 unityTag[1967:60b] Service UUID to String: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.805 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.807 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.809 unityTag[1967:60b] Service description found: <CBService: 0x15678d70> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.811 unityTag[1967:60b] Service UUID to String: f000aa20-0451-4000-b000-000000000000
+2013-11-05 13:19:40.812 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.814 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.815 unityTag[1967:60b] Service description found: <CBService: 0x15640920> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.817 unityTag[1967:60b] Service UUID to String: f000aa30-0451-4000-b000-000000000000
+2013-11-05 13:19:40.821 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.823 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.824 unityTag[1967:60b] Service description found: <CBService: 0x15640960> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.827 unityTag[1967:60b] Service UUID to String: f000aa40-0451-4000-b000-000000000000
+2013-11-05 13:19:40.828 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.830 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.832 unityTag[1967:60b] Service description found: <CBService: 0x15640980> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.834 unityTag[1967:60b] Service UUID to String: f000aa50-0451-4000-b000-000000000000
+2013-11-05 13:19:40.836 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.838 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.840 unityTag[1967:60b] Service description found: <CBService: 0x15640900> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.842 unityTag[1967:60b] Service UUID to String: ffe0
+2013-11-05 13:19:40.843 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.845 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.847 unityTag[1967:60b] Service description found: <CBService: 0x15678f40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.849 unityTag[1967:60b] Service UUID to String: f000aa60-0451-4000-b000-000000000000
+2013-11-05 13:19:40.850 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.852 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.855 unityTag[1967:60b] Service description found: <CBService: 0x15640940> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.857 unityTag[1967:60b] Service UUID to String: f000ffc0-0451-4000-b000-000000000000
+2013-11-05 13:19:40.859 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.860 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.862 unityTag[1967:60b] Service description found: <CBService: 0x15678110> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.865 unityTag[1967:60b] Service UUID to String: 180a
+2013-11-05 13:19:40.867 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.869 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.871 unityTag[1967:60b] Service description found: <CBService: 0x15678d20> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.873 unityTag[1967:60b] Service UUID to String: f000aa00-0451-4000-b000-000000000000
+2013-11-05 13:19:40.875 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.876 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.878 unityTag[1967:60b] Service description found: <CBService: 0x15678d40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.880 unityTag[1967:60b] Service UUID to String: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.882 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.884 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.886 unityTag[1967:60b] Service description found: <CBService: 0x15678d70> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.888 unityTag[1967:60b] Service UUID to String: f000aa20-0451-4000-b000-000000000000
+2013-11-05 13:19:40.890 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.892 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.894 unityTag[1967:60b] Service description found: <CBService: 0x15640920> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.896 unityTag[1967:60b] Service UUID to String: f000aa30-0451-4000-b000-000000000000
+2013-11-05 13:19:40.898 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.899 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.902 unityTag[1967:60b] Service description found: <CBService: 0x15640960> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.905 unityTag[1967:60b] Service UUID to String: f000aa40-0451-4000-b000-000000000000
+2013-11-05 13:19:40.907 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.908 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.910 unityTag[1967:60b] Service description found: <CBService: 0x15640980> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.912 unityTag[1967:60b] Service UUID to String: f000aa50-0451-4000-b000-000000000000
+2013-11-05 13:19:40.914 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.916 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.918 unityTag[1967:60b] Service description found: <CBService: 0x15640900> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.920 unityTag[1967:60b] Service UUID to String: ffe0
+2013-11-05 13:19:40.922 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.924 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.925 unityTag[1967:60b] Service description found: <CBService: 0x15678f40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.927 unityTag[1967:60b] Service UUID to String: f000aa60-0451-4000-b000-000000000000
+2013-11-05 13:19:40.929 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.930 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.932 unityTag[1967:60b] Service description found: <CBService: 0x15640940> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.934 unityTag[1967:60b] Service UUID to String: f000ffc0-0451-4000-b000-000000000000
+2013-11-05 13:19:40.937 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.939 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.941 unityTag[1967:60b] Service description found: <CBService: 0x15678110> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.943 unityTag[1967:60b] Service UUID to String: 180a
+2013-11-05 13:19:40.945 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.946 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.949 unityTag[1967:60b] Service description found: <CBService: 0x15678d20> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.951 unityTag[1967:60b] Service UUID to String: f000aa00-0451-4000-b000-000000000000
+2013-11-05 13:19:40.953 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.955 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.957 unityTag[1967:60b] Service description found: <CBService: 0x15678d40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.958 unityTag[1967:60b] Service UUID to String: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.960 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.962 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.963 unityTag[1967:60b] Service description found: <CBService: 0x15678d70> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.965 unityTag[1967:60b] Service UUID to String: f000aa20-0451-4000-b000-000000000000
+2013-11-05 13:19:40.966 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.968 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.970 unityTag[1967:60b] Service description found: <CBService: 0x15640920> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.972 unityTag[1967:60b] Service UUID to String: f000aa30-0451-4000-b000-000000000000
+2013-11-05 13:19:40.974 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.976 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.977 unityTag[1967:60b] Service description found: <CBService: 0x15640960> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.979 unityTag[1967:60b] Service UUID to String: f000aa40-0451-4000-b000-000000000000
+2013-11-05 13:19:40.981 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.983 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.985 unityTag[1967:60b] Service description found: <CBService: 0x15640980> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.987 unityTag[1967:60b] Service UUID to String: f000aa50-0451-4000-b000-000000000000
+2013-11-05 13:19:40.989 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.990 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.992 unityTag[1967:60b] Service description found: <CBService: 0x15640900> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:40.994 unityTag[1967:60b] Service UUID to String: ffe0
+2013-11-05 13:19:40.995 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:40.997 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:40.999 unityTag[1967:60b] Service description found: <CBService: 0x15678f40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.001 unityTag[1967:60b] Service UUID to String: f000aa60-0451-4000-b000-000000000000
+2013-11-05 13:19:41.004 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.005 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.007 unityTag[1967:60b] Service description found: <CBService: 0x15640940> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.009 unityTag[1967:60b] Service UUID to String: f000ffc0-0451-4000-b000-000000000000
+2013-11-05 13:19:41.011 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.012 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.014 unityTag[1967:60b] Service description found: <CBService: 0x15678110> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.016 unityTag[1967:60b] Service UUID to String: 180a
+2013-11-05 13:19:41.018 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.021 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.022 unityTag[1967:60b] Service description found: <CBService: 0x15678d20> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.024 unityTag[1967:60b] Service UUID to String: f000aa00-0451-4000-b000-000000000000
+2013-11-05 13:19:41.026 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.028 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.029 unityTag[1967:60b] Service description found: <CBService: 0x15678d40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.031 unityTag[1967:60b] Service UUID to String: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.033 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.035 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.037 unityTag[1967:60b] Service description found: <CBService: 0x15678d70> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.039 unityTag[1967:60b] Service UUID to String: f000aa20-0451-4000-b000-000000000000
+2013-11-05 13:19:41.040 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.042 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.043 unityTag[1967:60b] Service description found: <CBService: 0x15640920> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.046 unityTag[1967:60b] Service UUID to String: f000aa30-0451-4000-b000-000000000000
+2013-11-05 13:19:41.047 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.049 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.051 unityTag[1967:60b] Service description found: <CBService: 0x15640960> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.053 unityTag[1967:60b] Service UUID to String: f000aa40-0451-4000-b000-000000000000
+2013-11-05 13:19:41.055 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.056 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.058 unityTag[1967:60b] Service description found: <CBService: 0x15640980> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.060 unityTag[1967:60b] Service UUID to String: f000aa50-0451-4000-b000-000000000000
+2013-11-05 13:19:41.061 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.063 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.065 unityTag[1967:60b] Service description found: <CBService: 0x15640900> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.067 unityTag[1967:60b] Service UUID to String: ffe0
+2013-11-05 13:19:41.068 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.070 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.071 unityTag[1967:60b] Service description found: <CBService: 0x15678f40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.073 unityTag[1967:60b] Service UUID to String: f000aa60-0451-4000-b000-000000000000
+2013-11-05 13:19:41.076 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.077 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.079 unityTag[1967:60b] Service description found: <CBService: 0x15640940> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.081 unityTag[1967:60b] Service UUID to String: f000ffc0-0451-4000-b000-000000000000
+2013-11-05 13:19:41.083 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.085 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.087 unityTag[1967:60b] Service description found: <CBService: 0x15678110> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.089 unityTag[1967:60b] Service UUID to String: 180a
+2013-11-05 13:19:41.091 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.092 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.094 unityTag[1967:60b] Service description found: <CBService: 0x15678d20> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.096 unityTag[1967:60b] Service UUID to String: f000aa00-0451-4000-b000-000000000000
+2013-11-05 13:19:41.097 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.099 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.101 unityTag[1967:60b] Service description found: <CBService: 0x15678d40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.103 unityTag[1967:60b] Service UUID to String: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.105 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.106 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.108 unityTag[1967:60b] Service description found: <CBService: 0x15678d70> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.110 unityTag[1967:60b] Service UUID to String: f000aa20-0451-4000-b000-000000000000
+2013-11-05 13:19:41.112 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.113 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.115 unityTag[1967:60b] Service description found: <CBService: 0x15640920> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.117 unityTag[1967:60b] Service UUID to String: f000aa30-0451-4000-b000-000000000000
+2013-11-05 13:19:41.119 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.120 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.122 unityTag[1967:60b] Service description found: <CBService: 0x15640960> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.124 unityTag[1967:60b] Service UUID to String: f000aa40-0451-4000-b000-000000000000
+2013-11-05 13:19:41.125 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.127 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.129 unityTag[1967:60b] Service description found: <CBService: 0x15640980> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.131 unityTag[1967:60b] Service UUID to String: f000aa50-0451-4000-b000-000000000000
+2013-11-05 13:19:41.133 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.135 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.136 unityTag[1967:60b] Service description found: <CBService: 0x15640900> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.138 unityTag[1967:60b] Service UUID to String: ffe0
+2013-11-05 13:19:41.140 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.141 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.143 unityTag[1967:60b] Service description found: <CBService: 0x15678f40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.145 unityTag[1967:60b] Service UUID to String: f000aa60-0451-4000-b000-000000000000
+2013-11-05 13:19:41.146 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.148 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.150 unityTag[1967:60b] Service description found: <CBService: 0x15640940> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.151 unityTag[1967:60b] Service UUID to String: f000ffc0-0451-4000-b000-000000000000
+2013-11-05 13:19:41.153 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.155 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.157 unityTag[1967:60b] Service description found: <CBService: 0x15678110> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.159 unityTag[1967:60b] Service UUID to String: 180a
+2013-11-05 13:19:41.161 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.163 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.164 unityTag[1967:60b] Service description found: <CBService: 0x15678d20> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.166 unityTag[1967:60b] Service UUID to String: f000aa00-0451-4000-b000-000000000000
+2013-11-05 13:19:41.168 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.169 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.171 unityTag[1967:60b] Service description found: <CBService: 0x15678d40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.175 unityTag[1967:60b] Service UUID to String: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.178 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.181 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.190 unityTag[1967:60b] Service description found: <CBService: 0x15678d70> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.193 unityTag[1967:60b] Service UUID to String: f000aa20-0451-4000-b000-000000000000
+2013-11-05 13:19:41.194 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.196 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.198 unityTag[1967:60b] Service description found: <CBService: 0x15640920> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.200 unityTag[1967:60b] Service UUID to String: f000aa30-0451-4000-b000-000000000000
+2013-11-05 13:19:41.201 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.204 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.206 unityTag[1967:60b] Service description found: <CBService: 0x15640960> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.208 unityTag[1967:60b] Service UUID to String: f000aa40-0451-4000-b000-000000000000
+2013-11-05 13:19:41.210 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.212 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.214 unityTag[1967:60b] Service description found: <CBService: 0x15640980> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.216 unityTag[1967:60b] Service UUID to String: f000aa50-0451-4000-b000-000000000000
+2013-11-05 13:19:41.218 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.220 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.222 unityTag[1967:60b] Service description found: <CBService: 0x15640900> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.225 unityTag[1967:60b] Service UUID to String: ffe0
+2013-11-05 13:19:41.227 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.229 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.231 unityTag[1967:60b] Service description found: <CBService: 0x15678f40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.233 unityTag[1967:60b] Service UUID to String: f000aa60-0451-4000-b000-000000000000
+2013-11-05 13:19:41.235 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.237 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.239 unityTag[1967:60b] Service description found: <CBService: 0x15640940> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.241 unityTag[1967:60b] Service UUID to String: f000ffc0-0451-4000-b000-000000000000
+2013-11-05 13:19:41.243 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.244 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.247 unityTag[1967:60b] Service description found: <CBService: 0x15678110> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.250 unityTag[1967:60b] Service UUID to String: 180a
+2013-11-05 13:19:41.252 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.253 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.255 unityTag[1967:60b] Service description found: <CBService: 0x15678d20> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.257 unityTag[1967:60b] Service UUID to String: f000aa00-0451-4000-b000-000000000000
+2013-11-05 13:19:41.259 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.261 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.262 unityTag[1967:60b] Service description found: <CBService: 0x15678d40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.264 unityTag[1967:60b] Service UUID to String: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.266 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.268 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.270 unityTag[1967:60b] Service description found: <CBService: 0x15678d70> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.271 unityTag[1967:60b] Service UUID to String: f000aa20-0451-4000-b000-000000000000
+2013-11-05 13:19:41.274 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.275 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.277 unityTag[1967:60b] Service description found: <CBService: 0x15640920> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.279 unityTag[1967:60b] Service UUID to String: f000aa30-0451-4000-b000-000000000000
+2013-11-05 13:19:41.281 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.284 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.286 unityTag[1967:60b] Service description found: <CBService: 0x15640960> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.288 unityTag[1967:60b] Service UUID to String: f000aa40-0451-4000-b000-000000000000
+2013-11-05 13:19:41.289 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.291 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.293 unityTag[1967:60b] Service description found: <CBService: 0x15640980> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.295 unityTag[1967:60b] Service UUID to String: f000aa50-0451-4000-b000-000000000000
+2013-11-05 13:19:41.297 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.299 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.300 unityTag[1967:60b] Service description found: <CBService: 0x15640900> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.302 unityTag[1967:60b] Service UUID to String: ffe0
+2013-11-05 13:19:41.304 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.306 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.308 unityTag[1967:60b] Service description found: <CBService: 0x15678f40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.310 unityTag[1967:60b] Service UUID to String: f000aa60-0451-4000-b000-000000000000
+2013-11-05 13:19:41.312 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.314 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.316 unityTag[1967:60b] Service description found: <CBService: 0x15640940> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.318 unityTag[1967:60b] Service UUID to String: f000ffc0-0451-4000-b000-000000000000
+2013-11-05 13:19:41.320 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.321 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.324 unityTag[1967:60b] Service description found: <CBService: 0x15678110> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.326 unityTag[1967:60b] Service UUID to String: 180a
+2013-11-05 13:19:41.328 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.330 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.331 unityTag[1967:60b] Service description found: <CBService: 0x15678d20> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.333 unityTag[1967:60b] Service UUID to String: f000aa00-0451-4000-b000-000000000000
+2013-11-05 13:19:41.335 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.337 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.339 unityTag[1967:60b] Service description found: <CBService: 0x15678d40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.341 unityTag[1967:60b] Service UUID to String: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.342 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.344 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.345 unityTag[1967:60b] Service description found: <CBService: 0x15678d70> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.347 unityTag[1967:60b] Service UUID to String: f000aa20-0451-4000-b000-000000000000
+2013-11-05 13:19:41.349 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.350 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.352 unityTag[1967:60b] Service description found: <CBService: 0x15640920> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.354 unityTag[1967:60b] Service UUID to String: f000aa30-0451-4000-b000-000000000000
+2013-11-05 13:19:41.355 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.357 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.359 unityTag[1967:60b] Service description found: <CBService: 0x15640960> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.361 unityTag[1967:60b] Service UUID to String: f000aa40-0451-4000-b000-000000000000
+2013-11-05 13:19:41.362 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.364 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.366 unityTag[1967:60b] Service description found: <CBService: 0x15640980> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.369 unityTag[1967:60b] Service UUID to String: f000aa50-0451-4000-b000-000000000000
+2013-11-05 13:19:41.370 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.372 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.374 unityTag[1967:60b] Service description found: <CBService: 0x15640900> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.376 unityTag[1967:60b] Service UUID to String: ffe0
+2013-11-05 13:19:41.377 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.379 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.380 unityTag[1967:60b] Service description found: <CBService: 0x15678f40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.382 unityTag[1967:60b] Service UUID to String: f000aa60-0451-4000-b000-000000000000
+2013-11-05 13:19:41.384 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.386 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.388 unityTag[1967:60b] Service description found: <CBService: 0x15640940> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.390 unityTag[1967:60b] Service UUID to String: f000ffc0-0451-4000-b000-000000000000
+2013-11-05 13:19:41.393 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.395 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.397 unityTag[1967:60b] Service description found: <CBService: 0x15678110> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.399 unityTag[1967:60b] Service UUID to String: 180a
+2013-11-05 13:19:41.401 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.402 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.404 unityTag[1967:60b] Service description found: <CBService: 0x15678d20> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.406 unityTag[1967:60b] Service UUID to String: f000aa00-0451-4000-b000-000000000000
+2013-11-05 13:19:41.408 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.410 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.411 unityTag[1967:60b] Service description found: <CBService: 0x15678d40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.413 unityTag[1967:60b] Service UUID to String: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.415 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.417 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.419 unityTag[1967:60b] Service description found: <CBService: 0x15678d70> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.421 unityTag[1967:60b] Service UUID to String: f000aa20-0451-4000-b000-000000000000
+2013-11-05 13:19:41.423 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.424 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.426 unityTag[1967:60b] Service description found: <CBService: 0x15640920> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.428 unityTag[1967:60b] Service UUID to String: f000aa30-0451-4000-b000-000000000000
+2013-11-05 13:19:41.430 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.431 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.433 unityTag[1967:60b] Service description found: <CBService: 0x15640960> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.435 unityTag[1967:60b] Service UUID to String: f000aa40-0451-4000-b000-000000000000
+2013-11-05 13:19:41.436 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.438 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.439 unityTag[1967:60b] Service description found: <CBService: 0x15640980> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.441 unityTag[1967:60b] Service UUID to String: f000aa50-0451-4000-b000-000000000000
+2013-11-05 13:19:41.443 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.444 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.446 unityTag[1967:60b] Service description found: <CBService: 0x15640900> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.448 unityTag[1967:60b] Service UUID to String: ffe0
+2013-11-05 13:19:41.450 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.452 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.453 unityTag[1967:60b] Service description found: <CBService: 0x15678f40> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.456 unityTag[1967:60b] Service UUID to String: f000aa60-0451-4000-b000-000000000000
+2013-11-05 13:19:41.457 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.460 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.461 unityTag[1967:60b] Service description found: <CBService: 0x15640940> in Peripheral: <CBPeripheral: 0x15648c20 identifier = D03124B2-DC31-AA94-3276-B5422868E2F7, Name = "TI BLE Sensor Tag", state = connected>
+2013-11-05 13:19:41.464 unityTag[1967:60b] Service UUID to String: f000ffc0-0451-4000-b000-000000000000
+2013-11-05 13:19:41.465 unityTag[1967:60b] sCBUIID: f000aa10-0451-4000-b000-000000000000
+2013-11-05 13:19:41.467 unityTag[1967:60b] service characteristics (null)
+2013-11-05 13:19:41.472 unityTag[1967:60b] Service Characs:(
+    "<CBCharacteristic: 0x15556ab0>",
+    "<CBCharacteristic: 0x15557570>",
+    "<CBCharacteristic: 0x155575a0>",
+    "<CBCharacteristic: 0x15551a70>",
+    "<CBCharacteristic: 0x15551aa0>",
+    "<CBCharacteristic: 0x15557b10>",
+    "<CBCharacteristic: 0x15557b40>",
+    "<CBCharacteristic: 0x15553e20>",
+    "<CBCharacteristic: 0x15553e50>"
+) UUID: Device Information debug info:<CBService: 0x15678110>
+2013-11-05 13:19:41.477 unityTag[1967:60b] Service Characs:(
+    "<CBCharacteristic: 0x15553350>",
+    "<CBCharacteristic: 0x1567d620>"
+) UUID: Unknown (<f000aa00 04514000 b0000000 00000000>) debug info:<CBService: 0x15678d20>
+2013-11-05 13:19:41.482 unityTag[1967:60b] Service Characs:(
+    "<CBCharacteristic: 0x1567b160>",
+    "<CBCharacteristic: 0x15557670>",
+    "<CBCharacteristic: 0x155576a0>"
+) UUID: Unknown (<f000aa10 04514000 b0000000 00000000>) debug info:<CBService: 0x15678d40>
+2013-11-05 13:19:41.550 unityTag[1967:60b] Service Characs:(
+    "<CBCharacteristic: 0x1555f320>",
+    "<CBCharacteristic: 0x1555f350>"
+) UUID: Unknown (<f000aa20 04514000 b0000000 00000000>) debug info:<CBService: 0x15678d70>
+2013-11-05 13:19:41.790 unityTag[1967:60b] Service Characs:(
+    "<CBCharacteristic: 0x1567af60>",
+    "<CBCharacteristic: 0x1567d4c0>",
+    "<CBCharacteristic: 0x1567b0e0>"
+) UUID: Unknown (<f000aa30 04514000 b0000000 00000000>) debug info:<CBService: 0x15640920>
+2013-11-05 13:19:42.030 unityTag[1967:60b] Service Characs:(
+    "<CBCharacteristic: 0x1567c940>",
+    "<CBCharacteristic: 0x1567cde0>",
+    "<CBCharacteristic: 0x1567d360>"
+) UUID: Unknown (<f000aa40 04514000 b0000000 00000000>) debug info:<CBService: 0x15640960>
+2013-11-05 13:19:42.210 unityTag[1967:60b] Service Characs:(
+    "<CBCharacteristic: 0x1567ada0>",
+    "<CBCharacteristic: 0x1567cb20>"
+) UUID: Unknown (<f000aa50 04514000 b0000000 00000000>) debug info:<CBService: 0x15640980>
+2013-11-05 13:19:42.329 unityTag[1967:60b] Service Characs:(
+    "<CBCharacteristic: 0x1567afc0>"
+) UUID: Unknown (<ffe0>) debug info:<CBService: 0x15640900>
+2013-11-05 13:19:42.510 unityTag[1967:60b] Service Characs:(
+    "<CBCharacteristic: 0x15677df0>",
+    "<CBCharacteristic: 0x156409a0>"
+) UUID: Unknown (<f000aa60 04514000 b0000000 00000000>) debug info:<CBService: 0x15678f40>
+2013-11-05 13:19:42.689 unityTag[1967:60b] Service Characs:(
+    "<CBCharacteristic: 0x15556390>",
+    "<CBCharacteristic: 0x15562250>"
+) UUID: Unknown (<f000ffc0 04514000 b0000000 00000000>) debug info:<CBService: 0x15640940>

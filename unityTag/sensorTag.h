@@ -13,8 +13,9 @@
 
 @interface sensorTag : NSObject
 
-@property (strong,nonatomic) CBPeripheral *peripheral; //peripheral for CoreBluetooth
+@property (strong,nonatomic) CBPeripheral *p; //peripheral for CoreBluetooth
 @property (strong,nonatomic) CBCentralManager *central; //central looking for peripherals
-@property NSMutableDictionary *initialData;  //initialized data
+//@property NSMutableDictionary *initialData;  //initialized data
+@property NSMutableDictionary *setupData;
 
 @end
