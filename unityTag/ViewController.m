@@ -11,7 +11,7 @@
 //#import "sensorTag.h"
 #import <CoreBluetooth/CoreBluetooth.h>
 //#import "BLEUtility.h"
-
+#import "GyroData.h"
 
 
 @interface ViewController () <CBCentralManagerDelegate, CBPeripheralDelegate>
@@ -61,6 +61,8 @@
     self.logInterval = 1.0; //1000 ms
     
     self.logTimer = [NSTimer scheduledTimerWithTimeInterval:self.logInterval target:self selector:@selector(logValues:) userInfo:nil repeats:YES];
+    
+    self.gData = [[GyroscopeData alloc] init];
     
 }
 
@@ -145,7 +147,7 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error
 {
     
-    NSLog([NSString stringWithFormat:@"Service Characs:%@ UUID: %@ debug info:%@", service.characteristics, service.UUID, service.debugDescription]);
+   // NSLog([NSString stringWithFormat:@"Service Characs:%@ UUID: %@ debug info:%@", service.characteristics, service.UUID, service.debugDescription]);
     
     [self configureSensorTag];
     
@@ -180,6 +182,16 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
        
         [self.sensorsEnabled addObject:@"Accelerometer"];
     }
+    
+    if ([self sensorEnabled:@"Gyroscope active"]) {
+        CBUUID *sUUID =  [CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Gyroscope service UUID"]];
+        CBUUID *cUUID =  [CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Gyroscope config UUID"]];
+        uint8_t data = 0x07;
+        [BLEUtility writeCharacteristic:self.d.p sCBUUID:sUUID cCBUUID:cUUID data:[NSData dataWithBytes:&data length:1]];
+        cUUID =  [CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Gyroscope data UUID"]];
+        [BLEUtility setNotificationForCharacteristic:self.d.p sCBUUID:sUUID cCBUUID:cUUID enable:YES];
+        [self.sensorsEnabled addObject:@"Gyroscope"];
+    }
 }
 
 
@@ -194,6 +206,10 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
     newVal.accX = self.currentVal.accX;
     newVal.accY = self.currentVal.accY;
     newVal.accZ = self.currentVal.accZ;
+    
+    newVal.gyroX = self.currentVal.gyroX;
+    newVal.gyroY = self.currentVal.gyroY;
+    newVal.gyroZ = self.currentVal.gyroZ;
     
     newVal.timeStamp = date;
     
@@ -211,15 +227,44 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
         float y = [AccelData calcYValue:characteristic.value];
         float z = [AccelData calcZValue:characteristic.value];
     
-        NSLog(@"X: % 0.1fG",x);
-        NSLog(@"Y: % 0.1fG",y);
-        NSLog([NSString stringWithFormat:@"Z: % 0.1fG",z]);
+     //   NSLog(@"X: % 0.1fG",x);
+     //   NSLog(@"Y: % 0.1fG",y);
+     //   NSLog([NSString stringWithFormat:@"Z: % 0.1fG",z]);
     
         
         self.currentVal.accX = x;
         self.currentVal.accY = y;
         self.currentVal.accZ = z;
     
+    }
+    
+    if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Gyroscope data UUID"]]]) {
+        
+        
+        
+        
+        float x = [self.gData calcXValue:characteristic.value];
+        float y = [self.gData calcYValue:characteristic.value];
+        float z = [self.gData calcZValue:characteristic.value];
+        
+        NSLog(@"X: % 0.1fG", x);
+        NSLog(@"Y: % 0.1fG", y);
+        NSLog(@"Z: % 0.1fG", z);
+        
+        //self.gyro.accValueX.text = [NSString stringWithFormat:@"X: % 0.1f°/S",x];
+        //self.gyro.accValueY.text = [NSString stringWithFormat:@"Y: % 0.1f°/S",y];
+        //self.gyro.accValueZ.text = [NSString stringWithFormat:@"Z: % 0.1f°/S",z];
+    
+        //self.gyro.accValueX.textColor = [UIColor blackColor];
+        //self.gyro.accValueY.textColor = [UIColor blackColor];
+        //self.gyro.accValueZ.textColor = [UIColor blackColor];
+        
+        
+        self.currentVal.gyroX = x;
+        
+        self.currentVal.gyroY = y;
+        self.currentVal.gyroZ = z;
+        
     }
 }
 

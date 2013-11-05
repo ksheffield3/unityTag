@@ -103,7 +103,7 @@
       //  NSLog(@"sCBUIID: %@", scb);
        
         periphChars = service.characteristics;
-        NSLog(@"service characteristics %@", periphChars);
+      //  NSLog(@"service characteristics %@", periphChars);
       //  if ([service.UUID isEqual:sCBUUID]) {
         if([servUUID isEqual:scb]){
             for (characteristic in service.characteristics ) {

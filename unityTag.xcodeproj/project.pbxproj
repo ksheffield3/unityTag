@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDA09AAE18299E99008A43A7 /* GyroData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA09AAD18299E99008A43A7 /* GyroData.m */; };
 		CDC7EA411824363800B5655E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA401824363800B5655E /* Foundation.framework */; };
 		CDC7EA431824363800B5655E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA421824363800B5655E /* CoreGraphics.framework */; };
 		CDC7EA451824363800B5655E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA441824363800B5655E /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CDA09AAC18299E99008A43A7 /* GyroData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GyroData.h; sourceTree = "<group>"; };
+		CDA09AAD18299E99008A43A7 /* GyroData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GyroData.m; sourceTree = "<group>"; };
 		CDC7EA3D1824363800B5655E /* unityTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unityTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC7EA401824363800B5655E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDC7EA421824363800B5655E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -145,6 +148,8 @@
 				CDC7EA761824375700B5655E /* sensorTag.m */,
 				CDC7EA551824363800B5655E /* ViewController.h */,
 				CDC7EA561824363800B5655E /* ViewController.m */,
+				CDA09AAC18299E99008A43A7 /* GyroData.h */,
+				CDA09AAD18299E99008A43A7 /* GyroData.m */,
 				CDC7EA861828345B00B5655E /* BLEUtility.h */,
 				CDC7EA871828345B00B5655E /* BLEUtility.m */,
 				CDC7EA8318282DB100B5655E /* AccelData.h */,
@@ -291,6 +296,7 @@
 				CDC7EA511824363800B5655E /* AppDelegate.m in Sources */,
 				CDC7EA881828345B00B5655E /* BLEUtility.m in Sources */,
 				CDC7EA7D18243AFA00B5655E /* findSensor.m in Sources */,
+				CDA09AAE18299E99008A43A7 /* GyroData.m in Sources */,
 				CDC7EA4D1824363800B5655E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +506,7 @@
 				CDC7EA711824363800B5655E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDC7EA721824363800B5655E /* Build configuration list for PBXNativeTarget "unityTagTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +515,7 @@
 				CDC7EA741824363800B5655E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
