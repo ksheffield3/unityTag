@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CDA09AAE18299E99008A43A7 /* GyroData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA09AAD18299E99008A43A7 /* GyroData.m */; };
+		CDA09AB1182AA32E008A43A7 /* gyroValuesFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA09AB0182AA32E008A43A7 /* gyroValuesFromViewController.m */; };
 		CDC7EA411824363800B5655E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA401824363800B5655E /* Foundation.framework */; };
 		CDC7EA431824363800B5655E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA421824363800B5655E /* CoreGraphics.framework */; };
 		CDC7EA451824363800B5655E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA441824363800B5655E /* UIKit.framework */; };
@@ -15,7 +16,7 @@
 		CDC7EA4D1824363800B5655E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA4C1824363800B5655E /* main.m */; };
 		CDC7EA511824363800B5655E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA501824363800B5655E /* AppDelegate.m */; };
 		CDC7EA541824363800B5655E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC7EA521824363800B5655E /* Main.storyboard */; };
-		CDC7EA571824363800B5655E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA561824363800B5655E /* ViewController.m */; };
+		CDC7EA571824363800B5655E /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA561824363800B5655E /* ViewController.mm */; };
 		CDC7EA591824363800B5655E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC7EA581824363800B5655E /* Images.xcassets */; };
 		CDC7EA601824363800B5655E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA5F1824363800B5655E /* XCTest.framework */; };
 		CDC7EA611824363800B5655E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA401824363800B5655E /* Foundation.framework */; };
@@ -44,6 +45,8 @@
 /* Begin PBXFileReference section */
 		CDA09AAC18299E99008A43A7 /* GyroData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GyroData.h; sourceTree = "<group>"; };
 		CDA09AAD18299E99008A43A7 /* GyroData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GyroData.m; sourceTree = "<group>"; };
+		CDA09AAF182AA32E008A43A7 /* gyroValuesFromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gyroValuesFromViewController.h; sourceTree = "<group>"; };
+		CDA09AB0182AA32E008A43A7 /* gyroValuesFromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gyroValuesFromViewController.m; sourceTree = "<group>"; };
 		CDC7EA3D1824363800B5655E /* unityTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unityTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC7EA401824363800B5655E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDC7EA421824363800B5655E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,7 +59,7 @@
 		CDC7EA501824363800B5655E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CDC7EA531824363800B5655E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDC7EA551824363800B5655E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CDC7EA561824363800B5655E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CDC7EA561824363800B5655E /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		CDC7EA581824363800B5655E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CDC7EA5E1824363800B5655E /* unityTagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unityTagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC7EA5F1824363800B5655E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -147,7 +150,9 @@
 				CDC7EA751824375700B5655E /* sensorTag.h */,
 				CDC7EA761824375700B5655E /* sensorTag.m */,
 				CDC7EA551824363800B5655E /* ViewController.h */,
-				CDC7EA561824363800B5655E /* ViewController.m */,
+				CDC7EA561824363800B5655E /* ViewController.mm */,
+				CDA09AAF182AA32E008A43A7 /* gyroValuesFromViewController.h */,
+				CDA09AB0182AA32E008A43A7 /* gyroValuesFromViewController.m */,
 				CDA09AAC18299E99008A43A7 /* GyroData.h */,
 				CDA09AAD18299E99008A43A7 /* GyroData.m */,
 				CDC7EA861828345B00B5655E /* BLEUtility.h */,
@@ -290,11 +295,12 @@
 			files = (
 				CDC7EA8518282DB100B5655E /* AccelData.m in Sources */,
 				CDC7EA771824375700B5655E /* sensorTag.m in Sources */,
-				CDC7EA571824363800B5655E /* ViewController.m in Sources */,
+				CDC7EA571824363800B5655E /* ViewController.mm in Sources */,
 				CDC7EA7A182437AE00B5655E /* sensorData.m in Sources */,
 				CDC7EA8018243B4300B5655E /* sensorUtil.m in Sources */,
 				CDC7EA511824363800B5655E /* AppDelegate.m in Sources */,
 				CDC7EA881828345B00B5655E /* BLEUtility.m in Sources */,
+				CDA09AB1182AA32E008A43A7 /* gyroValuesFromViewController.m in Sources */,
 				CDC7EA7D18243AFA00B5655E /* findSensor.m in Sources */,
 				CDA09AAE18299E99008A43A7 /* GyroData.m in Sources */,
 				CDC7EA4D1824363800B5655E /* main.m in Sources */,

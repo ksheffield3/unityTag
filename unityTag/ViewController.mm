@@ -10,25 +10,60 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 #import "GyroData.h"
 
+//#import "bluetoothPlugIn.h"
+
+#import "gyroValuesFromViewController.h"
 
 @interface ViewController () <CBCentralManagerDelegate, CBPeripheralDelegate>
 @property (nonatomic) BOOL found;
+@property (nonatomic) gyroValuesFromViewController *gVals;
+
+
 @end
 
 @implementation ViewController
 
 @synthesize d;
+@synthesize gX;
 
 @synthesize sensorsEnabled;
 
+
+
+
+
+
+//when the app launches, initialize a sensortag object and a dictionary to hold the initial data
 - (void)viewDidLoad
 {
+	
+    
     [super viewDidLoad];
-    self.d = [[sensorTag alloc]init];
+	
+	self.d = [[sensorTag alloc]init];
     self.d.setupData = [[NSMutableDictionary alloc]init];
-
+    
+    self.sensorsEnabled = [[NSMutableArray alloc] init];
+	
+    self.d.central = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
+    
+    self.currentVal = [[sensorTagValues alloc]init];
+    
+    self.vals = [[NSMutableArray alloc]init];
+    
+    self.d.setupData = [self makeSensorTagConfiguration];
+    
+    self.logInterval = 1.0; //1000 ms
+    
+    self.logTimer = [NSTimer scheduledTimerWithTimeInterval:self.logInterval target:self selector:@selector(logValues:) userInfo:nil repeats:YES];
+    
+    self.gData = [[GyroscopeData alloc] init];
+    
+    self.gVals = [[gyroValuesFromViewController alloc]init];
+	
+	
 }
-
+//checks to see if a sensor is turned on
 -(bool)sensorEnabled:(NSString *)Sensor
 {
     NSString *val = [self.d.setupData valueForKey:Sensor];
@@ -46,34 +81,31 @@
     return [val integerValue];
 }
 
+//if the view should disappear, run this
+//also runs when the view appears on launch
+//initializes an array for the enabled sensors, creates the BTLE central, and an object for the gyroscope
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    self.sensorsEnabled = [[NSMutableArray alloc] init];
-
-    self.d.central = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
-    
-    self.currentVal = [[sensorTagValues alloc]init];
-    
-    self.vals = [[NSMutableArray alloc]init];
-    
-    self.d.setupData = [self makeSensorTagConfiguration];
-    
-    self.logInterval = 1.0; //1000 ms
-    
-    self.logTimer = [NSTimer scheduledTimerWithTimeInterval:self.logInterval target:self selector:@selector(logValues:) userInfo:nil repeats:YES];
-    
-    self.gData = [[GyroscopeData alloc] init];
+	
+	
     
 }
 
+//starts looking for BTLE devices (my sensor tag in particular)
 - (void)startScanning
 {
     NSLog(@"openConnection");
-   
+	
+	_openConnect();
+	
     [self.d.central scanForPeripheralsWithServices:nil options:nil];
 }
+
+
+//required for the CB framework, checks the state of the central
+//only scans when device is powered on and ready
 
 -(void)centralManagerDidUpdateState:(CBCentralManager *) central
 {
@@ -91,6 +123,7 @@
     }
     if (central.state == CBCentralManagerStatePoweredOn) {
         NSLog(@"about to scan");
+		_aboutToScan();
         [self startScanning];
     }
 }
@@ -101,7 +134,7 @@
     if (peripheral.name == NULL) {NSLog(@"No name found"); return; }
     if (peripheral.identifier == NULL) { NSLog(@"No identifier found"); return; }
     NSUUID *tagUUID = [[NSUUID alloc] initWithUUIDString:@"D03124B2-DC31-AA94-3276-B5422868E2F7"]; //UUID specific to my sensor tag
-   
+	
     if([peripheral.identifier isEqual:tagUUID]  && !self.found)
     {
         
@@ -109,6 +142,7 @@
         self.found = TRUE;
         [self.d.central stopScan];
         self.d.p = peripheral;
+		_tagFound();
         [self.d.central connectPeripheral:peripheral options:Nil];
     }
     else
@@ -130,6 +164,7 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
 {
     [peripheral setDelegate:self];
     [peripheral discoverServices:nil];
+	_connectedPeriph();
 }
 
 -(void) peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error
@@ -137,7 +172,7 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
     for (CBService *service in peripheral.services)
     {
         [peripheral discoverCharacteristics:nil forService:service];
-      
+		
     }
 }
 
@@ -156,20 +191,20 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
 
 
 -(void) configureSensorTag {
-   if ([self sensorEnabled:@"Accelerometer active"]) {
+	if ([self sensorEnabled:@"Accelerometer active"]) {
         CBUUID *sUUID = [CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Accelerometer service UUID"]];
-       // NSUUID *sUUID= [[NSUUID alloc] initWithUUIDString:[self.d.setupData valueForKey:@"Accelerometer service UUID"]];
+		// NSUUID *sUUID= [[NSUUID alloc] initWithUUIDString:[self.d.setupData valueForKey:@"Accelerometer service UUID"]];
         CBUUID *cUUID = [CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Accelerometer config UUID"]];
         CBUUID *pUUID = [CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Accelerometer period UUID"]];
         NSInteger period = [[self.d.setupData valueForKey:@"Accelerometer period"] integerValue];
         uint8_t periodData = (uint8_t)(period / 10);
-       
+		
         [BLEUtility writeCharacteristic:self.d.p sCBUUID:sUUID cCBUUID:pUUID data:[NSData dataWithBytes:&periodData length:1]];
         uint8_t data = 0x01;
         [BLEUtility writeCharacteristic:self.d.p sCBUUID:sUUID cCBUUID:cUUID data:[NSData dataWithBytes:&data length:1]];
         cUUID = [CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Accelerometer data UUID"]];
         [BLEUtility setNotificationForCharacteristic:self.d.p sCBUUID:sUUID cCBUUID:cUUID enable:YES];
-       
+		
         [self.sensorsEnabled addObject:@"Accelerometer"];
     }
     
@@ -201,6 +236,11 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
     newVal.gyroY = self.currentVal.gyroY;
     newVal.gyroZ = self.currentVal.gyroZ;
     
+	   
+	NSLog(@"Gyro X : %f", newVal.gyroX);
+	NSLog(@"Gyro Y : %f", newVal.gyroY);
+	NSLog(@"Gyro Z : %f", newVal.gyroZ);
+	
     newVal.timeStamp = date;
     
     [self.vals addObject:newVal];
@@ -210,35 +250,44 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
 
 -(void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
 {
-
+	
     if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Accelerometer data UUID"]]])
     {
         float x = [AccelData calcXValue:characteristic.value];
         float y = [AccelData calcYValue:characteristic.value];
         float z = [AccelData calcZValue:characteristic.value];
-    
-     //   NSLog(@"X: % 0.1fG",x);
-     //   NSLog(@"Y: % 0.1fG",y);
-     //   NSLog([NSString stringWithFormat:@"Z: % 0.1fG",z]);
+        
+		
+        
+		
+		//   NSLog(@"X: % 0.1fG",x);
+		//   NSLog(@"Y: % 0.1fG",y);
+		//   NSLog([NSString stringWithFormat:@"Z: % 0.1fG",z]);
         
         self.currentVal.accX = x;
         self.currentVal.accY = y;
         self.currentVal.accZ = z;
-    
+		
     }
     
     if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:[self.d.setupData valueForKey:@"Gyroscope data UUID"]]]) {        float x = [self.gData calcXValue:characteristic.value];
         float y = [self.gData calcYValue:characteristic.value];
         float z = [self.gData calcZValue:characteristic.value];
         
-        NSLog(@"X: % 0.1fG", x);
-        NSLog(@"Y: % 0.1fG", y);
-        NSLog(@"Z: % 0.1fG", z);
+        self.gX = &(x);
+        
+        
+        
+        
+        
+		//  NSLog(@"X: % 0.1fG", x);
+		//  NSLog(@"Y: % 0.1fG", y);
+		//  NSLog(@"Z: % 0.1fG", z);
         
         //self.gyro.accValueX.text = [NSString stringWithFormat:@"X: % 0.1f°/S",x];
         //self.gyro.accValueY.text = [NSString stringWithFormat:@"Y: % 0.1f°/S",y];
         //self.gyro.accValueZ.text = [NSString stringWithFormat:@"Z: % 0.1f°/S",z];
-    
+		
         //self.gyro.accValueX.textColor = [UIColor blackColor];
         //self.gyro.accValueY.textColor = [UIColor blackColor];
         //self.gyro.accValueZ.textColor = [UIColor blackColor];
@@ -303,5 +352,75 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+extern "C" {
+    float gyroX = 0;
+    
+    float _getX(float anX)
+    {
+        gyroX = anX;
+        return gyroX;
+    }
+    
+    float _getY(float anY)
+    {
+        float gyroY = anY;
+        return gyroY;
+    }
+    
+    float _getZ(float anZ)
+    {
+        float gyroZ = anZ;
+        return gyroZ;
+    }
+    
+    
+    void _loadView()
+    {
+        
+		ViewController *vc = [[ViewController alloc]init];
+        
+		[vc viewDidLoad];
+		
+    }
+    
+    //void _PrintToConsole(float valX, float valY, float valZ)
+    void _PrintToConsole()
+    {
+        
+        
+        NSLog(@"X :% 0.1f", gyroX);
+		// NSLog(@"Y :% 0.1f", valY);
+		//  NSLog(@"Z :% 0.1f", valZ);
+        
+    }
+	
+	void _openConnect()
+	{
+        
+		NSLog(@"Connection open");
+		
+	}
+	
+	void _aboutToScan()
+	{
+		NSLog(@"Preparing to scan");
+		
+	}
+	
+	void _tagFound()
+	{
+		NSLog(@"Found a tag");
+	}
+	
+	void _connectedPeriph()
+	{
+		NSLog(@"Connecting now...");
+	}
+    
+}
+
+
 
 @end
