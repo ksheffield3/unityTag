@@ -236,12 +236,16 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
     newVal.gyroY = self.currentVal.gyroY;
     newVal.gyroZ = self.currentVal.gyroZ;
     
-	   
+	
 	NSLog(@"Gyro X : %f", newVal.gyroX);
 	NSLog(@"Gyro Y : %f", newVal.gyroY);
 	NSLog(@"Gyro Z : %f", newVal.gyroZ);
 	
     newVal.timeStamp = date;
+    
+    
+    
+    
     
     [self.vals addObject:newVal];
     
@@ -274,7 +278,7 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
         float y = [self.gData calcYValue:characteristic.value];
         float z = [self.gData calcZValue:characteristic.value];
         
-        self.gX = &(x);
+		// self.gX = &(x);
         
         
         
@@ -355,46 +359,51 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
 
 
 extern "C" {
-    float gyroX = 0;
+    ViewController *vc = [[ViewController alloc]init];
+	
     
-    float _getX(float anX)
+    
+    float _returnX()
     {
-        gyroX = anX;
-        return gyroX;
+        return vc.currentVal.gyroX;
+    }
+    float _returnY()
+    {
+        return vc.currentVal.gyroY;
+    }
+    float _returnZ()
+    {
+        return vc.currentVal.gyroZ;
     }
     
-    float _getY(float anY)
+    
+    float _returnAccX()
     {
-        float gyroY = anY;
-        return gyroY;
+        return vc.currentVal.accX;
     }
     
-    float _getZ(float anZ)
+    float _returnAccY()
     {
-        float gyroZ = anZ;
-        return gyroZ;
+        return vc.currentVal.accY;
+    }
+    
+    float _returnAccZ()
+    {
+        return vc.currentVal.accZ;
     }
     
     
     void _loadView()
     {
-        
-		ViewController *vc = [[ViewController alloc]init];
-        
 		[vc viewDidLoad];
 		
     }
     
-    //void _PrintToConsole(float valX, float valY, float valZ)
+    
     void _PrintToConsole()
     {
         
-        
-        NSLog(@"X :% 0.1f", gyroX);
-		// NSLog(@"Y :% 0.1f", valY);
-		//  NSLog(@"Z :% 0.1f", valZ);
-        
-    }
+	}
 	
 	void _openConnect()
 	{

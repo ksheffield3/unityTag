@@ -32,7 +32,7 @@
 @property (strong,nonatomic) NSMutableArray *vals;
 @property (strong,nonatomic) NSTimer *logTimer;
 
-@property(nonatomic) float *gX;
+@property(nonatomic) float gX;
 
 @property float logInterval;
 
