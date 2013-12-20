@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD8257F9186408040066951B /* sensorTag.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8257F7186408040066951B /* sensorTag.m */; };
 		CDC7EA411824363800B5655E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA401824363800B5655E /* Foundation.framework */; };
 		CDC7EA431824363800B5655E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA421824363800B5655E /* CoreGraphics.framework */; };
 		CDC7EA451824363800B5655E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA441824363800B5655E /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD8257F7186408040066951B /* sensorTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sensorTag.m; sourceTree = "<group>"; };
+		CD8257F8186408040066951B /* sensorTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sensorTag.h; sourceTree = "<group>"; };
 		CDC7EA3D1824363800B5655E /* unityTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unityTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC7EA401824363800B5655E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDC7EA421824363800B5655E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				CDC7EA4F1824363800B5655E /* AppDelegate.h */,
+				CD8257F7186408040066951B /* sensorTag.m */,
+				CD8257F8186408040066951B /* sensorTag.h */,
 				CDC7EA501824363800B5655E /* AppDelegate.m */,
 				CDC7EA521824363800B5655E /* Main.storyboard */,
 				CDC7EA551824363800B5655E /* ViewController.h */,
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8257F9186408040066951B /* sensorTag.m in Sources */,
 				CDC7EA8518282DB100B5655E /* CalculateSensorData.m in Sources */,
 				CDC7EA571824363800B5655E /* ViewController.mm in Sources */,
 				CDC7EA511824363800B5655E /* AppDelegate.m in Sources */,
