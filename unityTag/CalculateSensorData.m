@@ -6,9 +6,16 @@
 //  Copyright (c) 2013 Kelley Sheffield. All rights reserved.
 //
 
-#import "AccelData.h"
+#import "CalculateSensorData.h"
 
 @implementation AccelData
+
+
+
+/***
+ Calculates data from the sensors
+ This is from the TI app
+ ****/
 
 
 +(float) calcXValue:(NSData *)data {

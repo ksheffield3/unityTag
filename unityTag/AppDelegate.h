@@ -10,6 +10,11 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+
+/***
+ Required file in an iOS app
+ ***/
+
 @property (strong, nonatomic) UIWindow *window;
 
 @end

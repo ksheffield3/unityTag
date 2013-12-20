@@ -10,6 +10,10 @@
 
 @implementation AppDelegate
 
+/***
+ Required file in an iOS app
+ ***/
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.

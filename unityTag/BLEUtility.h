@@ -6,6 +6,12 @@
  * ALL RIGHTS RESERVED
  */
 
+
+/****
+ This file implements more of the Core Bluetooth functionality on the iOS side
+ This is from the iOS app from TI
+ ***/
+
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 

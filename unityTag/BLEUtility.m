@@ -10,6 +10,12 @@
 
 @implementation BLEUtility
 
+
+/****
+ This file implements more of the Core Bluetooth functionality on the iOS side
+ This is from the iOS app from TI
+ ***/
+
 +(void)writeCharacteristic:(CBPeripheral *)peripheral sUUID:(NSString *)sUUID cUUID:(NSString *)cUUID data:(NSData *)data {
     // Sends data to BLE peripheral to process HID and send EHIF command to PC
     for ( CBService *service in peripheral.services ) {

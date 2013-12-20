@@ -10,7 +10,10 @@
 
 @interface AccelData : NSObject
 
-
+/***
+ Calculates data from the sensors
+ This is from the TI app
+ ****/
 
 #define KXTJ9_RANGE 4.0
 

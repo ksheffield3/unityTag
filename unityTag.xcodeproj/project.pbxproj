@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CDA09AAE18299E99008A43A7 /* GyroData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA09AAD18299E99008A43A7 /* GyroData.m */; };
-		CDA09AB1182AA32E008A43A7 /* gyroValuesFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA09AB0182AA32E008A43A7 /* gyroValuesFromViewController.m */; };
 		CDC7EA411824363800B5655E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA401824363800B5655E /* Foundation.framework */; };
 		CDC7EA431824363800B5655E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA421824363800B5655E /* CoreGraphics.framework */; };
 		CDC7EA451824363800B5655E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA441824363800B5655E /* UIKit.framework */; };
@@ -23,12 +21,8 @@
 		CDC7EA621824363800B5655E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC7EA441824363800B5655E /* UIKit.framework */; };
 		CDC7EA6A1824363800B5655E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDC7EA681824363800B5655E /* InfoPlist.strings */; };
 		CDC7EA6C1824363800B5655E /* unityTagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA6B1824363800B5655E /* unityTagTests.m */; };
-		CDC7EA771824375700B5655E /* sensorTag.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA761824375700B5655E /* sensorTag.m */; };
-		CDC7EA7A182437AE00B5655E /* sensorData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA79182437AE00B5655E /* sensorData.m */; };
-		CDC7EA7D18243AFA00B5655E /* findSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA7C18243AFA00B5655E /* findSensor.m */; };
-		CDC7EA8018243B4300B5655E /* sensorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA7F18243B4300B5655E /* sensorUtil.m */; };
 		CDC7EA82182816FC00B5655E /* output_services.txt in Resources */ = {isa = PBXBuildFile; fileRef = CDC7EA81182816FC00B5655E /* output_services.txt */; };
-		CDC7EA8518282DB100B5655E /* AccelData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA8418282DB100B5655E /* AccelData.m */; };
+		CDC7EA8518282DB100B5655E /* CalculateSensorData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA8418282DB100B5655E /* CalculateSensorData.m */; };
 		CDC7EA881828345B00B5655E /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7EA871828345B00B5655E /* BLEUtility.m */; };
 /* End PBXBuildFile section */
 
@@ -43,10 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CDA09AAC18299E99008A43A7 /* GyroData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GyroData.h; sourceTree = "<group>"; };
-		CDA09AAD18299E99008A43A7 /* GyroData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GyroData.m; sourceTree = "<group>"; };
-		CDA09AAF182AA32E008A43A7 /* gyroValuesFromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gyroValuesFromViewController.h; sourceTree = "<group>"; };
-		CDA09AB0182AA32E008A43A7 /* gyroValuesFromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gyroValuesFromViewController.m; sourceTree = "<group>"; };
 		CDC7EA3D1824363800B5655E /* unityTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unityTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC7EA401824363800B5655E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDC7EA421824363800B5655E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,17 +56,9 @@
 		CDC7EA671824363800B5655E /* unityTagTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "unityTagTests-Info.plist"; sourceTree = "<group>"; };
 		CDC7EA691824363800B5655E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CDC7EA6B1824363800B5655E /* unityTagTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unityTagTests.m; sourceTree = "<group>"; };
-		CDC7EA751824375700B5655E /* sensorTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sensorTag.h; sourceTree = "<group>"; };
-		CDC7EA761824375700B5655E /* sensorTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sensorTag.m; sourceTree = "<group>"; };
-		CDC7EA78182437AE00B5655E /* sensorData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sensorData.h; sourceTree = "<group>"; };
-		CDC7EA79182437AE00B5655E /* sensorData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sensorData.m; sourceTree = "<group>"; };
-		CDC7EA7B18243AFA00B5655E /* findSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findSensor.h; sourceTree = "<group>"; };
-		CDC7EA7C18243AFA00B5655E /* findSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = findSensor.m; sourceTree = "<group>"; };
-		CDC7EA7E18243B4300B5655E /* sensorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sensorUtil.h; sourceTree = "<group>"; };
-		CDC7EA7F18243B4300B5655E /* sensorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sensorUtil.m; sourceTree = "<group>"; };
 		CDC7EA81182816FC00B5655E /* output_services.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output_services.txt; sourceTree = "<group>"; };
-		CDC7EA8318282DB100B5655E /* AccelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelData.h; sourceTree = "<group>"; };
-		CDC7EA8418282DB100B5655E /* AccelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelData.m; sourceTree = "<group>"; };
+		CDC7EA8318282DB100B5655E /* CalculateSensorData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateSensorData.h; sourceTree = "<group>"; };
+		CDC7EA8418282DB100B5655E /* CalculateSensorData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateSensorData.m; sourceTree = "<group>"; };
 		CDC7EA861828345B00B5655E /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
 		CDC7EA871828345B00B5655E /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,24 +123,12 @@
 				CDC7EA4F1824363800B5655E /* AppDelegate.h */,
 				CDC7EA501824363800B5655E /* AppDelegate.m */,
 				CDC7EA521824363800B5655E /* Main.storyboard */,
-				CDC7EA78182437AE00B5655E /* sensorData.h */,
-				CDC7EA79182437AE00B5655E /* sensorData.m */,
-				CDC7EA7B18243AFA00B5655E /* findSensor.h */,
-				CDC7EA7C18243AFA00B5655E /* findSensor.m */,
-				CDC7EA7E18243B4300B5655E /* sensorUtil.h */,
-				CDC7EA7F18243B4300B5655E /* sensorUtil.m */,
-				CDC7EA751824375700B5655E /* sensorTag.h */,
-				CDC7EA761824375700B5655E /* sensorTag.m */,
 				CDC7EA551824363800B5655E /* ViewController.h */,
 				CDC7EA561824363800B5655E /* ViewController.mm */,
-				CDA09AAF182AA32E008A43A7 /* gyroValuesFromViewController.h */,
-				CDA09AB0182AA32E008A43A7 /* gyroValuesFromViewController.m */,
-				CDA09AAC18299E99008A43A7 /* GyroData.h */,
-				CDA09AAD18299E99008A43A7 /* GyroData.m */,
 				CDC7EA861828345B00B5655E /* BLEUtility.h */,
 				CDC7EA871828345B00B5655E /* BLEUtility.m */,
-				CDC7EA8318282DB100B5655E /* AccelData.h */,
-				CDC7EA8418282DB100B5655E /* AccelData.m */,
+				CDC7EA8318282DB100B5655E /* CalculateSensorData.h */,
+				CDC7EA8418282DB100B5655E /* CalculateSensorData.m */,
 				CDC7EA81182816FC00B5655E /* output_services.txt */,
 				CDC7EA581824363800B5655E /* Images.xcassets */,
 				CDC7EA471824363800B5655E /* Supporting Files */,
@@ -293,16 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDC7EA8518282DB100B5655E /* AccelData.m in Sources */,
-				CDC7EA771824375700B5655E /* sensorTag.m in Sources */,
+				CDC7EA8518282DB100B5655E /* CalculateSensorData.m in Sources */,
 				CDC7EA571824363800B5655E /* ViewController.mm in Sources */,
-				CDC7EA7A182437AE00B5655E /* sensorData.m in Sources */,
-				CDC7EA8018243B4300B5655E /* sensorUtil.m in Sources */,
 				CDC7EA511824363800B5655E /* AppDelegate.m in Sources */,
 				CDC7EA881828345B00B5655E /* BLEUtility.m in Sources */,
-				CDA09AB1182AA32E008A43A7 /* gyroValuesFromViewController.m in Sources */,
-				CDC7EA7D18243AFA00B5655E /* findSensor.m in Sources */,
-				CDA09AAE18299E99008A43A7 /* GyroData.m in Sources */,
 				CDC7EA4D1824363800B5655E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

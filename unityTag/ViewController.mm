@@ -8,15 +8,15 @@
 
 #import "ViewController.h"
 #import <CoreBluetooth/CoreBluetooth.h>
-#import "GyroData.h"
+
 
 //#import "bluetoothPlugIn.h"
 
-#import "gyroValuesFromViewController.h"
+
 
 @interface ViewController () <CBCentralManagerDelegate, CBPeripheralDelegate>
 @property (nonatomic) BOOL found;
-@property (nonatomic) gyroValuesFromViewController *gVals;
+
 
 
 @end
@@ -59,7 +59,7 @@
     
     self.gData = [[GyroscopeData alloc] init];
     
-    self.gVals = [[gyroValuesFromViewController alloc]init];
+    
 	
 	
 }

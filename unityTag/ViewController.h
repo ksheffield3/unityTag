@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 //#import "findSensor.h"
-#import "AccelData.h"
+#import "CalculateSensorData.h"
 #import "sensorTag.h"
 #import "BLEUtility.h"
 
